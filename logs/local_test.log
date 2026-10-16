@@ -1,0 +1,21 @@
+COMMAND: .\.venv\Scripts\python.exe -B -m coverage run -m unittest discover -v -s . -p "test_*.py"
+test_calculate_total_for_empty_cart (test_yummy_app.TestEasyLevel.test_calculate_total_for_empty_cart) ... ok
+test_calculate_total_for_multiple_items (test_yummy_app.TestEasyLevel.test_calculate_total_for_multiple_items) ... ok
+test_calculate_total_for_single_item (test_yummy_app.TestEasyLevel.test_calculate_total_for_single_item) ... ok
+test_calculate_total_with_zero_quantity (test_yummy_app.TestEasyLevel.test_calculate_total_with_zero_quantity) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+TEST_EXIT_CODE=0
+
+COMMAND: .\.venv\Scripts\python.exe -B -m coverage report -m
+Name                Stmts   Miss  Cover   Missing
+-------------------------------------------------
+gps_service.py          4      1    75%   12
+test_yummy_app.py      18      1    94%   43
+yummy_app.py           30     14    53%   35-45, 49-54
+-------------------------------------------------
+TOTAL                  52     16    69%
+COVERAGE_EXIT_CODE=0
